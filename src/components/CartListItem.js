@@ -8,7 +8,7 @@ const CartListItem = ({ cartItem }) => {
 
   return (
     <View style={styles.container}>
-      <Image source={{ uri: cartItem.product.image }} style={styles.image} />
+      <Image source={cartItem.product.image} style={styles.image} />
       <View style={styles.contentContainer}>
         <Text style={styles.name}>{cartItem.product.name}</Text>
         <Text style={styles.size}>Size {cartItem.size}</Text>
