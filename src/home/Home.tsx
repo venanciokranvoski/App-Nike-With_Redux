@@ -1,13 +1,15 @@
 import React from 'react';
 import { View, StyleSheet, StatusBar} from 'react-native';
-import ProductsScreen from '../Screens/Product/ProductsScreens';
-import ProductDetails from '../Screens/ProductDetails/ProductDetails';
+// import ProductsScreen from '../Screens/Product/ProductsScreens';
+// import ProductDetails from '../Screens/ProductDetails/ProductDetails';
+import ShoppingCard from '../Screens/ShoppingCard/ShoppingCard';
 
 export  function Home() {
   return (
     <View style={styles.container}>
       {/* <ProductsScreen /> */}
-      <ProductDetails />
+      {/* <ProductDetails /> */}
+      <ShoppingCard />
 
       <StatusBar barStyle={'default'} />
     </View>

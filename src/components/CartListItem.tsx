@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Image } from "react-native";
-import { Feather } from "@expo/vector-icons";
+import  Feather  from 'react-native-vector-icons/Feather';
 
-const CartListItem = ({ cartItem }) => {
+const CartListItem = ({ cartItem }: any) => {
   const increaseQuantity = () => {};
 
   const decreaseQuantity = () => {};

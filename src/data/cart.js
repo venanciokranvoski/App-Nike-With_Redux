@@ -1,9 +1,13 @@
+import nike1 from "../img/bootNike/nike1.png";
+import nike2 from "../img/bootNike/nike2.png";
+import nike3 from "../img/bootNike/nike3.png";
+
+
 export default [
   {
     product: {
       id: "1",
-      image:
-        "../img/bootNike/nike1.png",
+      image:nike1,
       name: "Wild Berry",
       price: 160,
     },
@@ -13,8 +17,7 @@ export default [
   {
     product: {
       id: "2",
-      image:
-        "../img/bootNike/nike2.png",
+      image:nike2,
       name: "Air Force 1",
       price: 169,
     },
@@ -24,8 +27,7 @@ export default [
   {
     product: {
       id: "3",
-      image:
-        "../img/bootNike/nike3.png",
+      image:nike3,
       name: "Nike Cosmic",
       price: 129,
     },
