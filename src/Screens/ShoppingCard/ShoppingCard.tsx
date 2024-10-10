@@ -41,9 +41,6 @@ const ShoppingCard = () => {
   );
 };
 
-export default ShoppingCard;
-
-
 export const styles = StyleSheet.create({
   totalContainer: {
     margin: 20,
@@ -65,7 +62,7 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     backgroundColor: 'black',
     width: '90%',
-    bottom:10,
+    bottom:30,
     alignSelf: 'center',
     padding: 20,
     borderRadius: 100, 
@@ -78,3 +75,5 @@ export const styles = StyleSheet.create({
     fontSize:17
 },
 })
+
+export default ShoppingCard;
