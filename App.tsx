@@ -4,7 +4,7 @@
  * @format
  */
 import { Provider } from "react-redux";
-import { store } from "./src/store";
+import { store } from "./src/redux/store";
 import { Home } from "./src/home/Home";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
