@@ -5,7 +5,7 @@
  */
 import React from "react";
 import { Provider } from "react-redux";
-import { store } from "./src/redux/store";
+import { store } from "./src/store/store";
 import { Home } from "./src/home/Home";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import messaging from '@react-native-firebase/messaging';

@@ -9,10 +9,10 @@
     ScrollView,
     Pressable,
     } from 'react-native';
-    import products from '../../data/products';
+    import { useSelector } from 'react-redux';
 
     function ProductDetails() {
-    const product = products[0];
+    const product = useSelector((state: any)=> state.products.selectedProduct);
 
     const {width, height} = useWindowDimensions();
     return (
