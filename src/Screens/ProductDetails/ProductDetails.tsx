@@ -9,12 +9,19 @@
     ScrollView,
     Pressable,
     } from 'react-native';
-    import { useSelector } from 'react-redux';
+    import { useSelector, useDispatch } from 'react-redux';
+    import { cartSlice } from '../../store/cartSlice';
 
     function ProductDetails() {
     const product = useSelector((state: any)=> state.products.selectedProduct);
+    const dispatch = useDispatch();
 
     const {width, height} = useWindowDimensions();
+
+    const addToCard = () => {
+        dispatch(cartSlice.actions.addCartItem({product}))
+    }
+
     return (
         <View>
         {/* {Image carrousel} */}
@@ -42,7 +49,7 @@
         </ScrollView>
 
         {/* add to card  */}
-        <Pressable style={styles.button}>
+        <Pressable onPress={addToCard} style={styles.button}>
             <Text style={styles.buttonText}>Add to cart</Text>
         </Pressable>
 

@@ -5,9 +5,12 @@ import ShoppingCard from "../Screens/ShoppingCard/ShoppingCard";
 import ProductDetails from '../Screens/ProductDetails/ProductDetails';
 import { Pressable, Text } from "react-native";
 import  FontAwesone5  from 'react-native-vector-icons/FontAwesome5';
+import { useSelector } from "react-redux";
+import { selectNumberOfItems } from "../store/cartSlice";
 
 const Navigation = () => {
     const Stack = createStackNavigator();
+    const numberOfItems =  useSelector(selectNumberOfItems);
     return (
         <NavigationContainer>
             <Stack.Navigator>
@@ -18,7 +21,7 @@ const Navigation = () => {
                         headerRight: () => (
                             <Pressable onPress={() => navigation.navigate('ShoppingCard')} style={{flexDirection: 'row', marginRight: 10}}>
                                     <FontAwesone5 name="shopping-cart" size={18} color={'black'} />
-                                    <Text style={{marginLeft: 5, fontWeight: '500', color:'black'}}>1</Text>
+                                    <Text style={{marginLeft: 5, fontWeight: '500', color:'black'}}>{numberOfItems}</Text>
                             </Pressable>
                         )
                     })} 

@@ -1,1 +1,29 @@
-// sem dados
+{
+    "project_info": {
+      "project_number": "978564413825",
+      "project_id": "nike-2a785",
+      "storage_bucket": "nike-2a785.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:978564413825:android:f8c477343e42f369d5d080",
+          "android_client_info": {
+            "package_name": "com.rx"
+          }
+        },
+        "oauth_client": [],
+        "api_key": [
+          {
+            "current_key": "AIzaSyD_TGjgAlbGsVajCoB35WEISZHG5P88bm8"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": []
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
