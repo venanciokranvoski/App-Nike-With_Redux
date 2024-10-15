@@ -1,13 +1,14 @@
 import React from 'react';
 import {FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
-import cart from '../../data/cart';
 import CartListItem from '../../components/CartListItem';
 import { useSelector } from 'react-redux';
-import { selectSubtotal } from '../../store/cartSlice';
+import { selectDeliveryPrice, selectSubtotal, selectTotal } from '../../store/cartSlice';
 
 const ShoppingFooter = () => {
   const addToCard = () => {}
   const subtotal =  useSelector(selectSubtotal);
+  const Delivery = useSelector(selectDeliveryPrice)
+  const PayCustomer =  useSelector(selectTotal);
 
   return (
     <>
@@ -18,11 +19,11 @@ const ShoppingFooter = () => {
         </View>
         <View style={styles.row}>
           <Text style={styles.txt}>Entrega</Text>
-          <Text style={styles.txt}>120,00 R$</Text>
+          <Text style={styles.txt}>{Delivery} R$</Text>
         </View>
         <View style={styles.row}>
           <Text style={[styles.txt,{fontWeight: `bold`, color: `black`}]}>Total</Text>
-          <Text style={[styles.txt,{fontWeight: `bold`, color: `black`}]}>1.520,00 R$</Text>
+          <Text style={[styles.txt,{fontWeight: `bold`, color: `black`}]}>{subtotal === 0 ? subtotal : PayCustomer} R$</Text>
         </View>
       </View>
 
